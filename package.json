@@ -2,11 +2,18 @@
   "name": "armoir",
   "version": "0.0.1",
   "private": true,
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write --single-quote --trailing-comma all ./**/*.js"
   },
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "16.6.1",
     "react-native": "0.57.5"
   },
