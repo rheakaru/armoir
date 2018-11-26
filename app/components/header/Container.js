@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Dimensions } from 'react-native';
-import Metrics from '../../assets/themes/Metrics';
-import Armoir from './armoir';
-import Cog from './cog';
+import { StyleSheet, View } from 'react-native';
+import Metrics from '../../themes/Metrics';
+import Logo from './Logo';
+import Cog from './Cog';
 
 export default class Header extends Component<Props> {
   render() {
     return (
-      <View style={styles.header}>
-        <Armoir />
+      <View style={styles.container}>
+        <Logo />
         <Cog />
       </View>
     );
@@ -16,7 +16,7 @@ export default class Header extends Component<Props> {
 }
 
 const styles = StyleSheet.create({
-  header: {
+  container: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',

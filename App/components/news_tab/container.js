@@ -10,6 +10,12 @@ import {
 } from 'react-native';
 
 type Props = {};
-export default class Results extends Component<Props> {
-
+export default class NewsTab extends Component<Props> {
+    render() {
+        return (
+            <View>
+                <Text>NEWSSSSS</Text>
+            </View>
+        );
+    }
 }

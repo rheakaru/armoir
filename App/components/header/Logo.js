@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Metrics from '../../assets/themes/Metrics';
-import { Fonts } from '../utils/Fonts';
+import { Fonts } from '../../../src/utils/Fonts';
 
 type Props = {};
-export default class Armoir extends Component<Props> {
+export default class Logo extends Component<Props> {
   render() {
     return (
-      <View style={styles.wrapper}>
+      <View style={styles.container}>
         <Text style={styles.armoir}>armoir</Text>
       </View>
     );
@@ -15,7 +14,7 @@ export default class Armoir extends Component<Props> {
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
+  container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',

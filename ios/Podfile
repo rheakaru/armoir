@@ -10,9 +10,10 @@ target 'armoir' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
 
-  target 'armoirTests' do
+target 'armoirTests' do
     inherit! :search_paths
     # Pods for testing
   end
+
 
 end

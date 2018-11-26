@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Image } from 'react-native';
-import Metrics from '../../assets/themes/Metrics';
+import Metrics from '../../themes/Metrics';
+import Images from '../../themes/Images';
 
 type Props = {};
 export default class Cog extends Component<Props> {
   render() {
     return (
-      <View style={styles.wrapper}>
+      <View style={styles.container}>
         <Image
-          source={require('../../assets/images/cog.png')}
+          source={Images.cog}
           style={styles.cog}
           resizeMode="contain"
           hidd
@@ -19,7 +20,7 @@ export default class Cog extends Component<Props> {
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
+  container: {
     flex: 1,
       flexDirection: 'row',
     justifyContent: 'flex-end',
